@@ -1,0 +1,19 @@
+JSON (Javascript Object Notation):
+“What is JSON?” JSON is a data transfer format. It offers a way for programs to packages and share/receive data.
+
+ “What does it mean to parse JSON?” That is when you get JSON data and convert it to usable data within a programing language or framework.
+ 
+ “How could I parse JSON in Javascript?” You use the JSON.parse() method.
+ 
+ “What does it mean to stringify?” It is the opposite of parsing. It's turning a JS object into JSON compatible code.
+ 
+ “How could I stringify JSON in Javascript?” You use the JSON.stringify() method.
+ 
+“What is the difference between JSON and XML?” XML is a markup-language-based data exchange format. It resembles HTML and JSON resembles JavaScript objects.
+ 
+ES Modules:
+“What is an ES Module?” It is a JavaScript module that is used to organize code into usable functions and separate files.  
+
+“How do I use an ES Module?” You need to import the function from the file.
+
+“How can ES Modules help me organize my code?” It can enable you to separate and organize your files and code into modules. Then in main you can call them all and use them to set up your web application.
