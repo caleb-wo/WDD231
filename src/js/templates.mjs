@@ -22,23 +22,32 @@ export const parkInfoLinks = [
     {
         name: "Current Conditions &#x203A;",
         link: "conditions.html",
-        image: parkData.images[2].url,
+        image: "",
         description:
         "See what conditions to expect in the park before leaving on your trip!"
     },
     {
         name: "Fees and Passes &#x203A;",
         link: "fees.html",
-        image: parkData.images[3].url,
+        image: "",
         description: "Learn about the fees and passes that are available."
     },
     {
         name: "Visitor Centers &#x203A;",
         link: "visitor_centers.html",
-        image: parkData.images[9].url,
+        image: "",
         description: "Learn about the visitor centers in the park."
     }
 ];
+
+export const getInfoLinks = (data) => {
+    const withUpdateImages = parkInfoLinks.map((item, index) => {
+        item.image = data.images[index + 2].url;
+        return item;
+      });
+    return withUpdateImages;
+}
+
 
 export const mediaCardTemplate = (info) => {
     const template = `

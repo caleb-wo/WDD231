@@ -1,0 +1,28 @@
+/* FOOTER */
+#park-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bs-pampas);
+  }
+  #park-footer h3 {
+    max-width: 90vw;
+    margin-left: 5vw;
+  }
+  #park-footer h4:first-of-type {
+    margin-top: 0%;
+  }
+  #park-footer h4 {
+    max-width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 5px;
+  }
+  #park-footer p {
+    max-width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  #park-footer p:last-of-type {
+    margin-bottom: 1em;
+  }

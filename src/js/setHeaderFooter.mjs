@@ -10,8 +10,7 @@ export function setHeaderInfo(data) {
     // set the banner image
     document.querySelector(".hero-banner > img").src = data.images[0].url;
     // use the template function above to set the rest of the park specific info in the header
-    document.querySelector(".hero-banner__content").innerHTML =
-        parkInfoTemplate(data);
+    document.querySelector(".hero-banner__content").innerHTML = parkInfoTemplate(data);
 }
 
 export const setFooterInfo = (data) => {
