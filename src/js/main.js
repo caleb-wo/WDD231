@@ -1,6 +1,7 @@
+// STYLES
+import "../css/style.css";
 import { getParkData } from "./parkService.mjs";
 import * as template from "./templates.mjs";
-import * as injection from "./injections.mjs";
 import * as headerFooter from "./setHeaderFooter.mjs";
 // CREATE park object
 async function initMain() {
@@ -9,10 +10,10 @@ async function initMain() {
     headerFooter.setHeaderInfo(parkData);
     // CREATE intro
     template.parkIntroInfoTemplate();
-    injection.setParkIntro(parkData);
+    template.setParkIntro(parkData);
     // GENERATE intro and info sections
     const infoArray = template.getInfoLinks(parkData).map(cardInfo => template.mediaCardTemplate(cardInfo));
-    injection.setParkInfo(infoArray);
+    template.setParkInfo(infoArray);
     // CREATE footer
     headerFooter.setFooterInfo(parkData);
   }
