@@ -5,7 +5,7 @@ import * as template from "./templates.mjs";
 import * as headerFooter from "./setHeaderFooter.mjs";
 // CREATE park object
 async function initMain() {
-    const parkData = await getParkData();
+    const parkData = await getParkData("yell");
     // CREATE header
     headerFooter.setHeaderInfo(parkData);
     // CREATE intro

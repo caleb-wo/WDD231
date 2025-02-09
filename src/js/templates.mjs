@@ -1,3 +1,4 @@
+import spritePath from '../images/sprite.symbol.svg';
 import { getParkData } from "./parkService.mjs";
 const parkData = getParkData();
 

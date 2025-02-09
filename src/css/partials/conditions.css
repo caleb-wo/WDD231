@@ -42,3 +42,32 @@
         font-size: 1.25rem;
     }
 }
+/* VISITOR centers */
+#visitorCentersBox h2 {
+    margin: 3vw;
+}
+#visitDetails {
+    border: 2px solid lightgray;
+    margin: 10px;
+    padding: 10px;
+}
+#visitDetails ul {
+    padding: 0;
+    margin: 10px;
+}
+#visitDetails ul li{
+    list-style-type: none;
+    text-align: justify;
+}
+#visitDetails ul li hr{
+    border:solid 1px lightgray;
+}
+/* ACTIVITIES */
+#activitiesBox h2 {
+    margin: 3vw;
+}
+#activeDetails {
+    border: 2px solid lightgray;
+    margin: 10px;
+    padding: 10px;
+}

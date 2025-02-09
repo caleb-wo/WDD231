@@ -15,18 +15,22 @@ async function getJson(url) {
   return data;
 }
 
-export async function getParkData() {
-  const parkData = await getJson("parks?parkCode=yell");
+export async function getParkData(parkCode) {
+  const parkData = await getJson(`parks?parkCode=${parkCode}`);
   return parkData.data[0];
 }
 
 
-export const getParkAlerts = async () => {
-  const parkAlertData = await getJson("alerts?parkCode=yell");
+export const getParkAlerts = async (parkCode) => {
+  const parkAlertData = await getJson(`alerts?parkCode=${parkCode}`);
   return parkAlertData.data;
 }
 
 export const getVisitorCenterData = async (parkCode) => {
   const dataObj = await getJson(`visitorcenters?parkCode=${parkCode}`); //yell
   return dataObj.data;
+}
+
+export async function getActivitiesData(parkData) {
+  return parkData.activities;
 }
