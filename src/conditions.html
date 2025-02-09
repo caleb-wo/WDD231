@@ -139,11 +139,33 @@
         </nav>
         </section>
       </header>
-    <main id="main">
+    <main id="conMain">
+        <h1>Conditions</h1>
+        <div id="alertsBox">
+            <h2>Alerts</h2>
+            <section id="alert">
+                <ul id="alertList">
+                </ul>
+            </section>
+        </div>
+        <div id="visitorCentersBox">
+            <h2>Visitor Services</h2>
+            <details name="current-details">
+                <summary>Visitor Centers</summary>
+                <ul id="visitCenterList"></ul>
+            </details>
+        </div>
+        <div id="activitiesBox">
+            <h2>Activities</h2>
+            <details name="current-details">
+                <summary>Activities</summary>
+                <ul></ul>
+            </details>
+        </div>
     </main>
     <footer id="park-footer"></footer>
-    <script type="module" src="js/injections.mjs"></script>
-    <script type="module" src="js/templates.mjs"></script>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/conditions/conTemplates.mjs"></script>
+    <script type="module" src="js/conditions/conditions.js"></script>
   </body>
 </html>
+

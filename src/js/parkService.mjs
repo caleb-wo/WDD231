@@ -4,7 +4,7 @@ async function getJson(url) {
   const options = {
     method: "GET",
     headers: {
-      "X-Api-Key": apiKey
+      "X-Api-Key": apiKey,
     }
   };
   let data = {};
@@ -18,4 +18,15 @@ async function getJson(url) {
 export async function getParkData() {
   const parkData = await getJson("parks?parkCode=yell");
   return parkData.data[0];
+}
+
+
+export const getParkAlerts = async () => {
+  const parkAlertData = await getJson("alerts?parkCode=yell");
+  return parkAlertData.data;
+}
+
+export const getVisitorCenterData = async (parkCode) => {
+  const dataObj = await getJson(`visitorcenters?parkCode=${parkCode}`); //yell
+  return dataObj.data;
 }

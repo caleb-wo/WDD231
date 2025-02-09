@@ -1,0 +1,44 @@
+/* ALERTS */
+#conMain h1 {
+    margin-left: 3vw;
+}
+#alertsBox h2 {
+    margin-left: 3vw;
+    margin-bottom: 0;
+}
+#alertList li {
+    margin-top: 0;
+    display: flex;
+    grid-template-columns: 10vw 90vw;
+    align-items: center;
+    gap: 5vw;
+}
+.alertText {
+    display: flex;
+    flex-direction: column;
+}
+.alertText h4,
+.alertText p {
+    margin: 0;
+}
+#alertList li svg{
+    max-width: clamp(2em ,3em ,4em);
+}
+@media screen and (min-width: 830px) {
+    #alertsBox h2 {
+        margin-left: 3vw;
+        margin-bottom: 0;
+        font-size: 2rem;
+    }
+    .alertText h4,
+    .alertText p {
+        margin: 0.25em;
+    }
+    .alertText h4 {
+        margin-top: 0;
+        font-size: 1.75rem;
+    }
+    .alertText p {
+        font-size: 1.25rem;
+    }
+}
