@@ -21,5 +21,7 @@ async function initConditions() {
     const activitiesData = await getActivitiesData(parkData);
     console.log(activitiesData);
     activitiesData.forEach(activity => template.setActivities(activity));
+    // DYNAMIC menu
+    template.enableNavigation();
   }
   document.addEventListener('DOMContentLoaded', initConditions);
