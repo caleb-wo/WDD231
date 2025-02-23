@@ -16,5 +16,7 @@ async function initMain() {
     template.setParkInfo(infoArray);
     // CREATE footer
     headerFooter.setFooterInfo(parkData);
+    // BUTTON navigation logic
+    template.enableNavigation();
   }
   document.addEventListener('DOMContentLoaded', initMain);
