@@ -3,6 +3,7 @@ import "../../css/style.css";
 import { getParkAlerts, getParkData ,getVisitorCenterData ,getActivitiesData } from "../parkService.mjs";
 import * as template from "./conTemplates.mjs";
 import * as headerFooter from "../setHeaderFooter.mjs";
+import { initNav } from "../nav.mjs";
 // CREATE park object
 async function initConditions() {
     const parkData = await getParkData("yell");
@@ -23,5 +24,6 @@ async function initConditions() {
     activitiesData.forEach(activity => template.setActivities(activity));
     // DYNAMIC menu
     template.enableNavigation();
+    initNav();
   }
   document.addEventListener('DOMContentLoaded', initConditions);

@@ -3,6 +3,8 @@ import "../css/style.css";
 import { getParkData } from "./parkService.mjs";
 import * as template from "./templates.mjs";
 import * as headerFooter from "./setHeaderFooter.mjs";
+import { initNav } from "./nav.mjs";
+
 // CREATE park object
 async function initMain() {
     const parkData = await getParkData("yell");
@@ -18,5 +20,6 @@ async function initMain() {
     headerFooter.setFooterInfo(parkData);
     // BUTTON navigation logic
     template.enableNavigation();
+    initNav();
   }
   document.addEventListener('DOMContentLoaded', initMain);
