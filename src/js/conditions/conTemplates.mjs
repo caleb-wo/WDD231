@@ -21,12 +21,13 @@ export const buildAlerts = (data) => {
 export const setVisitorCenterData = (data) => {
     const list = document.querySelector("#visitCenterList");
     const name = data.name;
+    const id = data.id;
     const desc = data.description;
     const dir = data.directionsInfo;
     const html = `
     <li>
         <div class="visitorCenterInfoBox">
-            <h4>${name}</h4>
+            <h4><a href="visitor-center.html?id=${id}">${name}</a></h4>
             <p>${desc}</p>
             <p>${dir}</p>
             <hr>
